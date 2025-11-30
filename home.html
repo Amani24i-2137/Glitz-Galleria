@@ -1,28 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <img src = "images/logo.png" width="130" height="130"/>
-            <span class="navigation-bar">Home</span>   
-            <span class="navigation-bar">Categories</span>  
-            <span class="navigation-bar">Top Sellers</span>
-            <span class="navigation-bar">Cart</span>
-    </header>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Glitz Galleria</title>
+        <title>Glitz Galleria - Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style2.css">
         <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
+   
+        <div class="modal fade" id="discountModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content discount-bg text-center position-relative">
+
+           
+            <button class="custom-close" data-bs-dismiss="modal">×</button>
+
+        
+            <div class="modal-body">
+
+                <h2 class="fw-bold mt-3">🎉 Limited Time Offer!</h2>
+                <h1 class="fw-bold display-5 text-danger">20% OFF</h1>
+                <p class="mb-3">Use this exclusive discount before the timer runs out!</p>
+
+            
+                <div class="countdown-box mb-3">
+                Offer ends in <span id="timer">00:30</span>
+                </div>
+
+    
+                <a href="#" class="btn btn-dark btn-lg rounded-pill px-4">
+                Shop Now
+                </a>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+        <header>
+            <img src="images/logo.png" alt="Logo"> 
+
+            <div class="nav-center" style="font-family: serif; font-size: 16px;">
+                <a class="nav-btn  selected-btn" href="home.html">Home</a>
+                <a class="nav-btn" href="categories.html">Categories</a>
+                <a class="nav-btn" href="TopSellers.html">Top Sellers</a>
+                <a class="nav-btn" href="cart.html">Cart</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <img src="images/abd37ee0-9012-4601-99dc-4c3b2e46ee41.png" alt="Glitz Galleria" class="hero-image">
+                <div class="hero-text">
+                    <h1>GLITZ GALLERIA</h1>
+                    <p>Delivering healing energy in every piece of jewellery, Saving your girlish hearts.</p>
+                </div>
+            </section>
+
+            <section class="collection-section">
+                <h2>Our Collection</h2>
+                <div class="collection-wrapper">
+                    <button class="arrow left-arrow">&#10094;</button>
+                    <div class="product-slider-wrapper">
+                        <div class="product-slider">
+                            <div class="slide">
+                                <div class="product-card"><img src="images/1111.webp" alt="Product 1"></div>
+                                <div class="product-card"><img src="images/2222.webp" alt="Product 2"></div>
+                                <div class="product-card"><img src="images/3333.webp" alt="Product 3"></div>
+                                <div class="product-card"><img src="images/4444.webp" alt="Product 4"></div>
+                            </div>
+                            <div class="slide">
+                                <div class="product-card"><img src="images/5555.webp" alt="Product 5"></div>
+                                <div class="product-card"><img src="images/6666.webp" alt="Product 6"></div>
+                                <div class="product-card"><img src="images/7777.webp" alt="Product 7"></div>
+                                <a href="our-collection.html" class="view-all-btn">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow">&#10095;</button>
+                </div>
+            </section>
+
+            <section class="gold-collection-section">
+                <h2>Gold Collection</h2>
+                <div class="collection-wrapper">
+                    <button class="arrow left-arrow">&#10094;</button>
+                    <div class="product-slider-wrapper">
+                        <div class="product-slider">
+                            <div class="slide">
+                                <div class="product-card"><img src="images/G11.webp" alt="Gold Product 1"></div>
+                                <div class="product-card"><img src="images/G22.webp" alt="Gold Product 2"></div>
+                                <div class="product-card"><img src="images/G33.webp" alt="Gold Product 3"></div>
+                                <div class="product-card"><img src="images/G44.webp" alt="Gold Product 4"></div>
+                            </div>
+                            <div class="slide">
+                                <div class="product-card"><img src="images/G55.webp" alt="Gold Product 5"></div>
+                                <div class="product-card"><img src="images/G66.webp" alt="Gold Product 6"></div>
+                                <div class="product-card"><img src="images/G77.webp" alt="Gold Product 7"></div>
+                                <a href="gold-collection.html" class="view-all-btn">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow">&#10095;</button>
+                </div>
+            </section>
+
+            <section class="about-us-section">
+                <h2>About Us</h2>
+                <p>
+                    Glitz Galleria is a jewelry brand dedicated to transmitting natural energy, inspired by all the healing things in the vastness of nature, may we be satisfied with the comfortable state of life, and bravely express our own energy and perception!
+                </p>
+                <p>Thank you for visiting us.</p>
+            </section>
+        </main>
+           
+        <script>
+         alert("Welcome to Glitz Galleria!");
+        </script>
+
+        <footer style="font-family: serif;">
+            <p><strong>Contact Us</strong></p>
+
+            <p>
+                Phone: +92 333 8533905 &nbsp; | &nbsp;
+                Email: glitzgalleria@gmail.com &nbsp; | &nbsp;
+                Instagram: @glitz_galleria &nbsp; | &nbsp;
+                Address: 4 Jinnah Avenue, F 8/4 F-8, Islamabad
+            </p>
+        </footer>
+
         <script src="index.js"></script>
+        <script>
+    
+            window.addEventListener('load', function () {
+                var myModal = new bootstrap.Modal(document.getElementById('discountModal'));
+                myModal.show();
+            });
+
+            
+            let time = 30000;
+            let timer = document.getElementById("timer");
+
+            let countdown = setInterval(() => {
+                let hours = Math.floor(time / 3600);
+                let minutes = Math.floor((time % 3600) / 60);
+                let seconds = time % 60;
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                timer.textContent = `${hours}:${minutes}:${seconds}`;
+
+
+                if (time <= 0) {
+                clearInterval(countdown);
+                timer.textContent = "Expired";
+                }
+                time--;
+            }, 1000);
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
-    <footer>
-        <p>Contact Us</p>
-        <p>
-            <span class="contact-details">Phone: +92 333 8533905</span>   
-            <span class="contact-details">Email: glitzgalleria@gmail.com</span>  
-            <span class="contact-details">Instagram: @glitz_galleria</span>
-        </p>
-    </footer>
 </html>
+
