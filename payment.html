@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Glitz Galleria</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_payment.css">
+    </head>
+
+    <body>
+        <header>
+        <img src="images/logo.png" width="130" height="130" alt="Logo"> 
+    
+        <div class="navigation-bar">
+            <a href="#">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="#">Top Sellers</a>
+            <a href="#">Cart</a>
+        </div>
+        </header>
+
+        <div class="title">
+            Secure Checkout
+        </div>
+        
+        <h2 class="thankyouMessage">Thank you for shopping with <span>Glitz Galleria</span>!</h2>
+
+        <div class="checkout">
+            
+            <div class="left-customer-details">
+                <label>Customer Name</label>
+                <input type="text" placeholder="Full Name" required>
+
+                <label>Contact Number</label>
+                <input type="tel" placeholder="+92-XXX-XXXXXXX" required>
+                
+                <label>Email Address</label>
+                <input type="email" required>
+                
+                <label>Shipping Address</label>
+                <input id="address-input" type="text" placeholder="House No., Street No., Area, City" required>
+            </div>
+
+
+            <div class="right-payment-details">
+
+                <div class="payment-type">
+                    <div class="method-selected">
+                        Credit/Debit Card
+                    </div>
+                    <div class="method">
+                        Digital Payment
+                    </div>
+                    <div class="method">
+                        Cash on Delivery
+                    </div>
+                </div>
+
+                <div class="card-details">
+                    
+                    <label>Cardholder Name</label>
+                    <input type="text" placeholder="Full Name" required>
+                    
+                    
+                    <label>Card Number</label>
+                    <input type="tel" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    
+                    <div class="row">
+                        <div>
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" required>
+                        </div>
+                        <div>
+                            <label>CVV</label>
+                            <input type="password" placeholder="XXX" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-button">
+            <a href="home.html" class="payment-button" onclick="processPayment()">Place Order</a>
+        </div>
+
+        <script>
+            function processPayment(event) {
+                console.log("Order placed. Back to home...");
+                window.alert("Order Placed Successfully!");
+            }
+        </script>
+
+        <footer>
+        <p>Contact Us</p>
+        <p>
+            <span class="contact-details">Phone: +92 333 8533905</span>   
+            <span class="contact-details">Email: glitzgalleria@gmail.com</span>  
+            <span class="contact-details">Instagram: @glitz_galleria</span>
+            <span class="contact-details">Address: 4 Jinnah Avenue, F 8/4 F-8, Islamabad</span>
+        </p>
+    </footer>
+    </body>
+</html>
